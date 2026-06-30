@@ -1,4 +1,3 @@
-I'll enhance the README with detailed command explanations and a comprehensive "Yocto for Unknown Boards from Scratch" section. Here's the updated version:
 
 ```markdown
 # 🧩 Yocto Project - Complete Engineering Handbook
