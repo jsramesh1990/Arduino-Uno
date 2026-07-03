@@ -1,0 +1,34 @@
+Hardware Setup Instructions
+Pin Connections Table
+Module	Interface	Arduino Pins	Notes
+LiDAR	I2C	SDA=A4, SCL=A5	VL53L0X
+GPS	UART	RX=4, TX=3	SoftwareSerial
+Fingerprint	UART	RX=5, TX=6	SoftwareSerial
+RFID/NFC	I2C	SDA=A4, SCL=A5, RST=9, SS=10	MFRC522
+CAN	SPI	MOSI=11, MISO=12, SCK=13, CS=10	MCP2515
+LoRa	SPI	MOSI=11, MISO=12, SCK=13, CS=10, RST=9, DIO0=2	SX1276
+GSM	UART	RX=7, TX=8	SIM800/900
+PWM Output	-	Pin 9	Test pin
+ADC Input	-	A0/A1	Test pins
+GPIO	-	Pin 2, 7, 13	I/O tests
+Key Features Implemented
+
+    GPIO Testing: Digital input/output verification
+
+    UART Communication: Multi-device UART testing
+
+    I2C Communication: Device scanning and validation
+
+    SPI Communication: CAN and LoRa testing
+
+    PWM Testing: Duty cycle generation and verification
+
+    ADC Accuracy: Precision measurement and calibration
+
+    Power Monitoring: Real-time power consumption
+
+    Data Transmission: LoRa, GSM, and CAN output
+
+    Console Dashboard: Real-time system status
+
+This project provides a complete framework for testing and validating all connected modules with comprehensive console output for monitoring and debugging.

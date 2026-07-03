@@ -1,0 +1,155 @@
+Arduino-Uno/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── docs/
+│   ├── hardware/
+│   │   ├── wiring_diagram.md
+│   │   ├── pin_configuration.md
+│   │   └── power_requirements.md
+│   ├── api/
+│   │   ├── sensor_api.md
+│   │   ├── communication_api.md
+│   │   └── test_api.md
+│   └── guides/
+│       ├── setup_guide.md
+│       ├── troubleshooting.md
+│       └── calibration_guide.md
+├── src/
+│   ├── main/
+│   │   ├── Arduino_Multi_Sensor.ino
+│   │   ├── config.h
+│   │   ├── globals.h
+│   │   └── system.h
+│   ├── sensors/
+│   │   ├── lidar/
+│   │   │   ├── LidarSensor.cpp
+│   │   │   ├── LidarSensor.h
+│   │   │   └── README.md
+│   │   ├── gps/
+│   │   │   ├── GPSSensor.cpp
+│   │   │   ├── GPSSensor.h
+│   │   │   └── README.md
+│   │   ├── fingerprint/
+│   │   │   ├── FingerprintSensor.cpp
+│   │   │   ├── FingerprintSensor.h
+│   │   │   └── README.md
+│   │   ├── rfid/
+│   │   │   ├── RFIDReader.cpp
+│   │   │   ├── RFIDReader.h
+│   │   │   └── README.md
+│   │   └── sensors.h
+│   ├── communication/
+│   │   ├── can/
+│   │   │   ├── CANBus.cpp
+│   │   │   ├── CANBus.h
+│   │   │   └── README.md
+│   │   ├── lora/
+│   │   │   ├── LoRaComm.cpp
+│   │   │   ├── LoRaComm.h
+│   │   │   └── README.md
+│   │   ├── gsm/
+│   │   │   ├── GSMComm.cpp
+│   │   │   ├── GSMComm.h
+│   │   │   └── README.md
+│   │   └── communication.h
+│   ├── tests/
+│   │   ├── gpio/
+│   │   │   ├── GPIOTest.cpp
+│   │   │   └── GPIOTest.h
+│   │   ├── uart/
+│   │   │   ├── UARTTest.cpp
+│   │   │   └── UARTTest.h
+│   │   ├── i2c/
+│   │   │   ├── I2CTest.cpp
+│   │   │   └── I2CTest.h
+│   │   ├── spi/
+│   │   │   ├── SPITest.cpp
+│   │   │   └── SPITest.h
+│   │   ├── pwm/
+│   │   │   ├── PWMTest.cpp
+│   │   │   └── PWMTest.h
+│   │   ├── adc/
+│   │   │   ├── ADCTest.cpp
+│   │   │   └── ADCTest.h
+│   │   ├── power/
+│   │   │   ├── PowerTest.cpp
+│   │   │   └── PowerTest.h
+│   │   └── tests.h
+│   ├── utilities/
+│   │   ├── Logger.cpp
+│   │   ├── Logger.h
+│   │   ├── Timer.cpp
+│   │   ├── Timer.h
+│   │   ├── DataFormatter.cpp
+│   │   ├── DataFormatter.h
+│   │   ├── ConsoleOutput.cpp
+│   │   ├── ConsoleOutput.h
+│   │   └── utilities.h
+│   └── data/
+│       ├── DataManager.cpp
+│       ├── DataManager.h
+│       └── data_structures.h
+├── lib/
+│   ├── Adafruit_VL53L0X/
+│   ├── TinyGPSPlus/
+│   ├── Adafruit_Fingerprint/
+│   ├── MFRC522/
+│   ├── mcp2515/
+│   ├── LoRa/
+│   └── SoftwareSerial/
+├── test/
+│   ├── unit_tests/
+│   │   ├── test_lidar.cpp
+│   │   ├── test_gps.cpp
+│   │   ├── test_fingerprint.cpp
+│   │   ├── test_rfid.cpp
+│   │   ├── test_can.cpp
+│   │   ├── test_lora.cpp
+│   │   ├── test_gsm.cpp
+│   │   └── test_all.cpp
+│   └── integration_tests/
+│       ├── test_communication.cpp
+│       ├── test_sensors.cpp
+│       ├── test_system.cpp
+│       └── test_power.cpp
+├── examples/
+│   ├── basic_sensor_read/
+│   ├── communication_demo/
+│   ├── full_system_test/
+│   └── power_optimization/
+├── tools/
+│   ├── serial_monitor.py
+│   ├── data_visualizer.py
+│   ├── calibration_tool.py
+│   ├── power_analyzer.py
+│   └── firmware_updater.py
+├── config/
+│   ├── production_config.h
+│   ├── development_config.h
+│   ├── testing_config.h
+│   └── custom_config_template.h
+├── scripts/
+│   ├── build.sh
+│   ├── upload.sh
+│   ├── test_runner.py
+│   ├── generate_docs.sh
+│   └── ci_cd_pipeline.yml
+├── firmware/
+│   ├── bootloader/
+│   │   └── optiboot_uno.hex
+│   └── firmware_versions/
+│       ├── v1.0.0.bin
+│       └── latest.bin -> v1.0.0.bin
+├── logs/
+│   ├── sensor_logs/
+│   ├── test_logs/
+│   ├── error_logs/
+│   └── power_logs/
+└── output/
+    ├── sensor_data/
+    ├── test_reports/
+    ├── console_outputs/
+    └── calibration_data/
